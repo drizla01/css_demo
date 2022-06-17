@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        display: flex;
+        place-items: center;
+        height: 100vh;
+        background-color: rgb(2, 2, 32);
+      }
+      main {
+        height: 80%;
+        display: grid;
+        gap: 10px;
+        width: 50%;
+        margin: auto;
+        grid-template-areas: "a a a b b" "a a a b b" " c c d d d" "c c e e e";
+      }
+      .item-a {
+        background-color: rgb(131, 5, 5);
+        grid-area: a;
+      }
+      .item-b {
+        background-color: greenyellow;
+        grid-area: b;
+      }
+      .item-c {
+        background: green;
+        grid-area: c;
+      }
+      .item-d {
+        background-color: skyblue;
+        grid-area: d;
+      }
+      .item-e {
+        background-color: skyblue;
+        grid-area: e;
+      }
+    </style>
+    <main>
+      <div class="item-a"></div>
+      <div class="item-b"></div>
+      <div class="item-c"></div>
+      <div class="item-d"></div>
+      <div class="item-e"></div>
+    </main>
+  </body>
+</html>

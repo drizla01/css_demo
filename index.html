@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+  </head>
+  <body>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      img {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      .layout {
+        height: 300px;
+        width: 600px;
+        align-items: flex-start;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        padding: 8%;
+      }
+      .c-view .left-view .middle-view h2 {
+        font-family: "Big Shoulders Display", cursive;
+        font-weight: 700;
+        color: hsl(0, 0%, 95%);
+      }
+      .c-view {
+        display: flex;
+        width: 100%;
+        color: #fff;
+        font-family: "Lexend Deca", sans-serif;
+      }
+      .left-view {
+        background-color: hsl(31, 77%, 52%);
+        padding: 1rem;
+        width: 100%;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+      }
+      .middle-view {
+        background-color: hsl(184, 100%, 22%);
+        padding: 1rem;
+        width: 100%;
+      }
+      .right-view {
+        background-color: hsl(179, 100%, 13%);
+        padding: 1rem;
+        width: 100%;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      div p {
+        margin-bottom: 80px;
+        font-weight: 400;
+        font-family: "Lexend Deca", sans-serif;
+        color: hsl(0, 0%, 100%, 0.75);
+        font-size: 15px;
+      }
+      button {
+        width: 150px;
+        border-radius: 20px;
+        font-weight: bold;
+        padding: 15px 30px;
+        font-size: 15px;
+        border: none;
+        background-color: hsl(0, 0%, 95%);
+        margin-bottom: 10px;
+        outline: none;
+      }
+      button:hover {
+        background-color: transparent;
+        border: 2px solid hsl(0, 0%, 95%);
+        color: hsl(0, 0%, 95%);
+        cursor: pointer;
+        padding: 12px 27px;
+      }
+      .btn-left {
+        color: hsl(31, 77%, 52%);
+      }
+      .btn-mid {
+        color: hsl(184, 100%, 22%);
+      }
+      .btn-right {
+        color: hsl(179, 100%, 13%);
+      }
+
+      @media screen and (max-width: 375px) {
+        body {
+          padding: 50px 20px;
+        }
+        .layout {
+          flex-direction: column;
+        }
+      }
+    </style>
+    <main class="main">
+      <nav style="text-align: center">
+        <a href="./images1/grid.html"> click Here for the grid task </a>
+      </nav>
+      <div class="layout">
+        <div class="c-view">
+          <div class="left-view">
+            <div>
+              <img src="./images1/icon-sedans.svg" alt="" />
+            </div>
+            <h2>SEDANS</h2>
+            <br />
+            <p>
+              Choose a sedan fot its affordability and excellent fuel economy.
+              Ideal for cruising in the city or on your next road trip.
+            </p>
+            <br />
+
+            <button class="btn-left" type="button">Learn More</button>
+          </div>
+          <div class="middle-view">
+            <div>
+              <img src="./images1/icon-suvs.svg" alt="" />
+            </div>
+            <h2>SUVS</h2>
+            <br />
+            <p>
+              Take an SUV for its spacious interior, power, and versatility.
+              Perfect for your next family vacation and off-road adventures.
+            </p>
+            <br />
+
+            <button class="btn-mid" type="button">Learn More</button>
+          </div>
+          <div class="right-view">
+            <div>
+              <img src="./images1/icon-luxury.svg" alt="" />
+            </div>
+            <h2>LUXURY</h2>
+            <br />
+            <p>
+              Cruise in the best car brands without the bloated prices. Enjoy
+              the enhanced comfort of a luxury rental and arrive in style.
+            </p>
+            <br />
+
+            <button class="btn-right" type="button">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
